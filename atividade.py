@@ -6,7 +6,7 @@ class Atividade(object):
 
     def __init__(self, nome, inicio, fim, pontos):
         self.nome = nome
-        # d = dia, b = mes, y = ano, H = horas
+        # d = dia, b = mes, Y = ano, H = horas
         self.inicio = int(time.mktime(datetime.strptime(
                                     inicio, "%d de %b de %Y").timetuple()))
         self.fim = int(time.mktime(datetime.strptime(
